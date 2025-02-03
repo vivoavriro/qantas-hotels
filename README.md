@@ -1,50 +1,110 @@
-# React + TypeScript + Vite
+## Qantas Hotels Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview
 
-Currently, two official plugins are available:
+This project is a React application built with TypeScript and Vite. It includes ESLint and Prettier for code quality and formatting, along with Testing Library and Vitest for testing which is very similair to jest.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Prerequisites
 
-## Expanding the ESLint configuration
+Ensure you have the following installed:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Node.js (Latest LTS recommended)
 
-- Configure the top-level `parserOptions` property like this:
+npm (for package management)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+# Installation
+
+Clone the repository and install dependencies:
+
+## Clone the repository
+
+git clone https://github.com/vivoavriro/qantas-hotels.git
+cd qantas-hotels-test
+
+## Install dependencies
+
+npm install
+
+# Running the Project
+
+Start the development server:
+
+```bash
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+This will start Vite's development server with hot module replacement (HMR).
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Building for Production
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+To build the application for production, run:
+
+```bash
+npm run build
 ```
+
+The output will be available in the dist/ directory.
+
+## Previewing the Build
+
+To preview the built project locally:
+
+```bash
+npm run preview
+```
+
+## Linting and Formatting
+
+Run ESLint to check for code issues:
+
+```bash
+npm run lint
+```
+
+## Automatically fix linting issues:
+
+```bash
+npm run lint:fix
+```
+
+## Format code using Prettier:
+
+```bash
+npm run format
+```
+
+# Running Tests
+
+Run the test suite:
+
+```bash
+npm run test
+```
+
+## Run tests in watch mode:
+
+```bash
+npm run test:watch
+```
+
+## Run tests with coverage:
+
+```bash
+npm run test:coverage
+```
+
+## Run specific test files or patterns:
+
+```bash
+npm run test:file -- testFileName
+```
+
+# Technologies Used
+
+- React 18.3.1
+
+- TypeScript ~5.6.2
+
+- Vite 6.0.5
+
+- Vitest 3.0.4
