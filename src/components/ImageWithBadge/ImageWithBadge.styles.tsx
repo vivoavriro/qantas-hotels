@@ -1,11 +1,17 @@
 import styled from 'styled-components';
 
 export const ImageWithBadgeWrapper = styled.div`
-  width: max-content;
   position: relative;
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9; //sample aspect ratio
+  }
+`;
 
 export const Badge = styled.p`
   position: absolute;
