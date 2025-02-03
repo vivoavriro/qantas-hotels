@@ -19,6 +19,7 @@ export const HotelsListResultsDetail = styled.p`
     font-weight: bold;
     font-style: normal;
     color: black;
+    padding-left: 5px;
   }
 `;
 
@@ -26,17 +27,12 @@ export const HotelsListSort = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 0.5rem; */
   font-weight: bold;
 `;
 
 export const HotelsListResults = styled.ul`
   display: flex;
   flex-direction: column;
-  /* & > div {
-    padding: 0.25rem 0%;
-    border-top: 1px solid gray;
-  } */
 `;
 
 export const HotelsListResultWrapper = styled.li`

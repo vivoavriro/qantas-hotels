@@ -45,12 +45,12 @@ const HotelCard: React.FC<Hotel> = (props) => {
             <b>1</b> night total ({offer.displayPrice.currency})
           </Styled.HotelCarDetailsPricingTime>
           <Styled.HotelCarDetailsPricingPrice>
-            <span>{`${getCurrencySymbol(offer?.savings?.currency)}`}</span>{' '}
+            <span>{`${getCurrencySymbol(offer?.savings?.currency)}`}</span>
             {offer.displayPrice.amount}
           </Styled.HotelCarDetailsPricingPrice>
           <Styled.HotelCarDetailsPricingSave>
             {offer.savings &&
-              `Save ${getCurrencySymbol(offer.savings.currency)}${offer.savings.amount}`}
+              `Save ${getCurrencySymbol(offer.savings.currency)}${offer.savings.amount}~`}
           </Styled.HotelCarDetailsPricingSave>
         </Styled.HotelCarDetailsPricing>
       </Styled.HotelCarDetails>

@@ -55,7 +55,7 @@ export const HotelCarDetailsOfferName = styled.p`
 export const HotelCarDetailsCancellation = styled.p`
   align-self: end;
   color: green;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 `;
 
 export const HotelCarDetailsPricing = styled.div`
@@ -66,12 +66,15 @@ export const HotelCarDetailsPricing = styled.div`
   gap: 0.5rem;
 `;
 
-export const HotelCarDetailsPricingTime = styled.p``;
+export const HotelCarDetailsPricingTime = styled.p`
+  font-size: 0.75rem;
+  color: gray;
+`;
 
 export const HotelCarDetailsPricingPrice = styled.h4`
   display: flex;
   gap: 0.2rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 
   & > span {
     font-size: 1rem;
@@ -80,7 +83,7 @@ export const HotelCarDetailsPricingPrice = styled.h4`
 `;
 
 export const HotelCarDetailsPricingSave = styled.div`
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: #c51a1a;
   min-height: 20px;
 `;
