@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const RatingWrapper = styled.div`
   width: max-content;
   position: relative;
+  min-width: max-content;
 `;
 
 export const RatingFill = styled.div<{ rate?: number }>`
