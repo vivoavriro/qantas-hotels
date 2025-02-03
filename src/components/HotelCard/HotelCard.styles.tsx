@@ -98,7 +98,7 @@ export const TitleWrapper = styled.div`
   -webkit-line-clamp: 1;
   line-clamp: 1;
   overflow: hidden;
-  max-width: 65%;
+  max-width: 260px;
   line-height: 1.25rem;
   text-align: left;
 `;
